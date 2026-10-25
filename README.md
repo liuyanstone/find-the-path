@@ -21,3 +21,10 @@ Language preference and win/streak totals stay in this browser's local storage. 
 
 ## Development
 Buildless HTML/CSS/SVG/ES modules. Serve with `python3 -m http.server 8768`. Run `node check.mjs` for 6,000 randomized board checks, solution playback, losing-path detection, backtracking, the fallback generator, and translation parity.
+
+## Sound and readability
+Gentle step sounds and a short success melody are synthesized locally with Web Audio. Use the Sound on / Sound off button; the setting is saved in this browser. A failed completed route plays a separate descending melody. Hidden-mine steps sound identical to safe steps. Audio begins after a player interaction.
+
+Instructions use 18px text, controls use 16–18px text or larger, secondary labels use 14px or larger, and buttons have larger touch targets. English and Chinese layouts are supported.
+
+Run `node check-audio.mjs` to verify cue scheduling, mute behavior, saved preferences, and distinct outcome melodies.
