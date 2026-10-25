@@ -1,7 +1,7 @@
 import {createGameAudio} from './audio.mjs';
-import {LEVELS,createBoard,safePath,extendPath,evaluate} from './engine.mjs';
-import {t,language,applyLanguage,changeLanguage} from './i18n.mjs';
-import {STORAGE_KEY,SET_LENGTH,localDay,createState,restoreState,recordDailyRound,startSet,rollDay,sessionScore,complete} from './session.mjs';
+import {LEVELS,createBoard,safePath,extendPath,evaluate} from './engine.mjs?v=daily-v1';
+import {t,language,applyLanguage,changeLanguage} from './i18n.mjs?v=daily-v1';
+import {STORAGE_KEY,SET_LENGTH,localDay,createState,restoreState,recordDailyRound,startSet,rollDay,sessionScore,complete} from './session.mjs?v=daily-v1';
 const $=s=>document.querySelector(s),NS='http://www.w3.org/2000/svg';
 const sound=createGameAudio('find-path-sound');
 function renderSound(){ $('#soundBtn').setAttribute('aria-pressed',String(sound.enabled)); $('#soundLabel').textContent=t(sound.enabled?'soundOn':'soundOff'); }

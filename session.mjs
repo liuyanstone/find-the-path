@@ -1,4 +1,4 @@
-import {LEVELS} from './engine.mjs';
+import {LEVELS} from './engine.mjs?v=daily-v1';
 export const SET_LENGTH=10;
 export const STORAGE_KEY='find-path-daily-v1';
 export function localDay(date=new Date()){return`${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;}
